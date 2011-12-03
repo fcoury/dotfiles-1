@@ -147,7 +147,9 @@ endif
 " GRB: set the color scheme
 :set t_Co=256 " 256 colors
 :set background=dark
-:color grb256
+:color solarized
+" :color grb256
+" :colorscheme solarized
 
 " GRB: hide the toolbar in GUI mode
 if has("gui_running")
@@ -596,10 +598,10 @@ imap <c-c> <esc>
 
 command! InsertTime :normal a<c-r>=strftime('%F %H:%M:%S.0 %z')<cr>
 
-map <Left> :echo "no!"<cr>
-map <Right> :echo "no!"<cr>
-map <Up> :echo "no!"<cr>
-map <Down> :echo "no!"<cr>
+" map <Left> :echo "no!"<cr>
+" map <Right> :echo "no!"<cr>
+" map <Up> :echo "no!"<cr>
+" map <Down> :echo "no!"<cr>
 
 function! PromoteToLet()
   :normal! dd
